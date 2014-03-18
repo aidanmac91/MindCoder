@@ -34,10 +34,10 @@ public class MainActivity extends Activity {
             TLValue parserOutput = object.main(source);
             String strToPrint = parserOutput.toString();
             int length = strToPrint.length();
-            //String s = "123";
-           // s = strToPrint.substring(0,1);
-            System.out.println(strToPrint);
-           // out.setText(s);
+            String s = "123";
+            s = strToPrint.substring(0,1);
+            System.out.println(s);
+            out.setText(s);
 
             //System.out.println(parserOutput);
         } catch (Exception e) {

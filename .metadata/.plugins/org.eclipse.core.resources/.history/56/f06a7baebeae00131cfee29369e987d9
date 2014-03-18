@@ -33,11 +33,10 @@ public class MainActivity extends Activity {
             String source = in.getText().toString();
             TLValue parserOutput = object.main(source);
             String strToPrint = parserOutput.toString();
-            int length = strToPrint.length();
-            //String s = "123";
-           // s = strToPrint.substring(0,1);
             System.out.println(strToPrint);
-           // out.setText(s);
+            int length = strToPrint.length();
+            String s = strToPrint.substring(0, length-4);
+            out.setText(s);
 
             //System.out.println(parserOutput);
         } catch (Exception e) {

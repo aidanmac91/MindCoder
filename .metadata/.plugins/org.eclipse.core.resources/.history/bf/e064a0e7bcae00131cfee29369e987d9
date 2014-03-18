@@ -64,6 +64,7 @@ public class Main {
 		TLNode returned = walker.walk();
 		//System.out.println(returned == null ? "null" : returned.evaluate());
 		TLValue output = returned.evaluate();
+		System.out.println(output);
 		return output;
 	}
 }

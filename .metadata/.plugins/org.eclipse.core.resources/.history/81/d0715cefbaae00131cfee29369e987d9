@@ -1,8 +1,8 @@
 package com.example.antlrtest;
 
 import main.tl.Main;
-import main.tl.TLValue;
 import android.app.Activity;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -31,16 +31,12 @@ public class MainActivity extends Activity {
         	EditText in = (EditText)findViewById(R.id.input_text);
             TextView out = (TextView)findViewById(R.id.output_text);
             String source = in.getText().toString();
-            TLValue parserOutput = object.main(source);
-            String strToPrint = parserOutput.toString();
-            int length = strToPrint.length();
-            //String s = "123";
-           // s = strToPrint.substring(0,1);
-            System.out.println(strToPrint);
-           // out.setText(s);
+            
+            
+            object.main(source);
+            
 
-            //System.out.println(parserOutput);
-        } catch (Exception e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -43,7 +43,7 @@ public class Main {
 	// System.out.println(returned == null ? "null" : returned.evaluate());
 	// }
 
-	public TLValue main(String file) throws Exception {
+	public void main(String file) throws Exception {
 
 		//TLLexer lexer = new TLLexer(new ANTLRFileStream(file));
 		TLLexer lexer = new TLLexer(new ANTLRStringStream(file));
@@ -62,8 +62,7 @@ public class Main {
 
 		// get the returned node
 		TLNode returned = walker.walk();
-		//System.out.println(returned == null ? "null" : returned.evaluate());
-		TLValue output = returned.evaluate();
-		return output;
+		System.out.println(returned == null ? "null" : returned.evaluate());
+		
 	}
 }
