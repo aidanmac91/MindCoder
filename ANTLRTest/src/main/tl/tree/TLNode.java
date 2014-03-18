@@ -5,5 +5,6 @@ import main.tl.TLValue;
 public interface TLNode {
 
     TLValue evaluate();
+    
 }
 

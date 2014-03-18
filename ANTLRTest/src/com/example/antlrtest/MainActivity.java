@@ -1,5 +1,7 @@
 package com.example.antlrtest;
 
+import java.util.ArrayList;
+
 import main.tl.Main;
 import main.tl.TLValue;
 import android.app.Activity;
@@ -10,7 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-		
+	
+	public BluetoothManager bm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,20 +30,17 @@ public class MainActivity extends Activity {
     
     public void sendMessage(View view) {
         Main object = new Main();
+        BluetoothManager bm = new BluetoothManager();
         		try {
         	EditText in = (EditText)findViewById(R.id.input_text);
             TextView out = (TextView)findViewById(R.id.output_text);
             String source = in.getText().toString();
             TLValue parserOutput = object.main(source);
-            String strToPrint = parserOutput.toString();
-            int length = strToPrint.length();
-            //String s = "123";
-           // s = strToPrint.substring(0,1);
-            System.out.println(strToPrint);
-           // out.setText(s);
-
-            //System.out.println(parserOutput);
-        } catch (Exception e) {
+            //replace test with output
+            String test = "Test";
+            bm.addToArray(test);
+            
+        		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

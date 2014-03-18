@@ -7,4 +7,7 @@
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="com.example.antlrtest.BluetoothManager"/>
+<fullyQualifiedTypeName name="com.example.antlrtest.MainActivity"/>
 </qualifiedTypeNameHistroy>
